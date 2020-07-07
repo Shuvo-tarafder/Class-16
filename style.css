@@ -1,0 +1,111 @@
+@font-face{
+    src: url('font/GothamRoundedMedium.woff');
+    font-family: gothamMedium;
+}
+@font-face{
+    src: url('font/GothamRoundedBold.woff');
+    font-family: gothamBold;
+}
+
+body{
+    font-family: gothamBold;
+    background: #000;
+}
+
+.width-wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1025px;
+}
+
+.btn-green {
+    background: #16a085;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+
+.btn-green:hover {
+    background: 168d76;
+    color: #fff;
+}
+
+/** Header **/
+
+header {
+    background: url(images/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-left .nav-link,
+.nav-right .nav-link {
+    color: #fff;
+    padding-top: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.top-navigation {
+    padding-top: 40px;
+}
+
+.hero-content {
+    padding: 240px 0;
+}
+
+.hero-content .title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: gothamBold;
+}
+
+.hero-content .subtitle {
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding-bottom: 5px;
+}
+
+.social-nav .nav-item .nav-link {
+    padding: 0 10px 20px 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/** responsive **/
+
+@media (max-width: 767px) {
+    .nav-lest .float-right {
+        float: none !important;
+    }
+    
+    .nav-left,
+    .nav-right {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .col-md-2 {
+        order: -1;
+    }
+}
+
+
+
